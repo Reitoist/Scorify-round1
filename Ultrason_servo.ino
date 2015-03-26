@@ -17,7 +17,7 @@ void loop() {
   delayMicroseconds(10); 
   digitalWrite(trig, LOW);
   duration = pulseIn(echo, HIGH);
-  distance = (duration/2) / 29.1;
+  distance = (duration/2) / 29.4;
   if (distance >= 180 || distance <= 0)
    s.write(0);
   else 
